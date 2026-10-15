@@ -8,3 +8,6 @@
 [submodule "moma_nav"]
 	path = moma_nav
 	url = https://github.com/Johnson3176/moma_nav.git
+[submodule "robot_description"]
+	path = robot_description
+	url = https://github.com/yangzhaofeng496/robot_description.git
