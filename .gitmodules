@@ -11,3 +11,6 @@
 [submodule "robot_description"]
 	path = robot_description
 	url = https://github.com/yangzhaofeng496/robot_description.git
+[submodule "moveit_whole_body_ik"]
+	path = moveit_whole_body_ik
+	url = https://github.com/yangzhaofeng496/-moveit_whole_body_ik.git
