@@ -1,6 +1,6 @@
 [submodule "patrol"]
 	path = patrol
-	url = https://github.com/Lucid-A/lebang_battery_driver.git
+	url = https://github.com/yangzhaofeng496/patrol.git
 	branch = moveit_patrol
 [submodule "dobot_v4_bringup"]
 	path = 3rd/dobot_v4_bringup
