@@ -1,13 +1,11 @@
-[submodule "battery"]
-	path = 3rd/battery
+[submodule "patrol"]
+	path = patrol
 	url = https://github.com/Lucid-A/lebang_battery_driver.git
-[submodule "3rd/livox_ros_driver2"]
-	path = 3rd/livox_ros_driver2
-	url = https://github.com/Lucid-A/livox_ros_driver2.git
-	branch = Guangtie
-[submodule "moma_nav"]
-	path = moma_nav
-	url = https://github.com/Johnson3176/moma_nav.git
+	branch = moveit_patrol
+[submodule "dobot_v4_bringup"]
+	path = 3rd/dobot_v4_bringup
+	url = https://github.com/Zeuss-0/dobot_v4_bringup.git
+	branch = FK_Srv
 [submodule "robot_description"]
 	path = robot_description
 	url = https://github.com/yangzhaofeng496/robot_description.git
