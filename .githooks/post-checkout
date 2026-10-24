@@ -1,0 +1,53 @@
+#!/bin/sh
+
+# 仅在切换分支时执行
+[ "$3" = "1" ] || exit 0
+
+root=$(git rev-parse --show-toplevel) || exit 1
+cd "$root" || exit 1
+[ -f .gitmodules ] || exit 0
+
+parent_branch=$(git symbolic-ref --quiet --short HEAD)
+failed=0
+
+git config -f .gitmodules --name-only \
+    --get-regexp '^submodule\..*\.path$' |
+(
+    while IFS= read -r key; do
+        section=${key%.path}
+        path=$(git config -f .gitmodules --get "$key")
+        branch=$(git config -f .gitmodules --get "$section.branch")
+
+        # 未指定 branch 的条目跳过
+        [ -n "$branch" ] || continue
+
+        if [ "$branch" = "." ]; then
+            branch=$parent_branch
+            [ -n "$branch" ] || continue
+        fi
+
+        # 防止目录未初始化时，误操作主仓库
+        if [ ! -e "$path/.git" ]; then
+            echo "跳过：$path 尚未初始化或不是独立仓库" >&2
+            failed=1
+            continue
+        fi
+
+        echo "切换 $path → $branch"
+
+        if git -C "$path" show-ref --verify --quiet \
+            "refs/heads/$branch"; then
+            git -C "$path" switch --no-guess "$branch" || failed=1
+        else
+            if ! git -C "$path" show-ref --verify --quiet "refs/remotes/origin/$branch"; then
+                echo "失败：$path 不存在本地分支 $branch 或 origin/$branch；请检查 .gitmodules，或在该仓库执行 git fetch origin" >&2
+                failed=1
+                continue
+            fi
+            git -C "$path" switch --track -c "$branch" \
+                "origin/$branch" || failed=1
+        fi
+    done
+
+    exit "$failed"
+)
