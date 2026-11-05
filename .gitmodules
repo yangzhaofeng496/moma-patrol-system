@@ -62,4 +62,4 @@
 	url = https://github.com/Johnson3176/moma_perception.git
 [submodule "moma_light"]
 	path = moma_light
-	url = ./moma_light
+	url = https://github.com/Moma-Patrol/moma_light.git
