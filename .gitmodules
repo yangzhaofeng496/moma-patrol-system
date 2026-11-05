@@ -1,65 +1,6 @@
-[submodule "battery"]
-	path = 3rd/battery
-	url = https://github.com/Lucid-A/lebang_battery_driver.git
-[submodule "3rd/livox_ros_driver2"]
-	path = 3rd/livox_ros_driver2
-	url = https://github.com/Lucid-A/livox_ros_driver2.git
-	branch = Guangtie
-[submodule "moma_nav"]
-	path = moma_nav
-	url = https://github.com/Johnson3176/moma_nav.git
-[submodule "dobot_v4_bringup"]
-	path = dobot_v4_bringup
-	url = https://github.com/Zeuss-0/dobot_v4_bringup.git
-[submodule "3rd/dobot_v4_bringup"]
-	path = 3rd/dobot_v4_bringup
-	url = https://github.com/Zeuss-0/dobot_v4_bringup.git
-[submodule "3rd/rs_driver"]
-	path = 3rd/rs_driver
-	url = https://github.com/RoboSense-LiDAR/rs_driver.git
-[submodule "3rd/mvs_ros_pkg"]
-	path = 3rd/mvs_ros_pkg
-	url = https://github.com/yangzhaofeng496/mvs_ros_pkg.git
-[submodule "3rd/modbus_interface"]
-	path = 3rd/modbus_interface
-	url = https://github.com/Zeuss-0/modbus_interface.git
-[submodule "3rd/wj_716N_lidar"]
-	path = 3rd/wj_716N_lidar
-	url = https://github.com/Zeuss-0/wj_716N_lidar.git
-[submodule "3rd/realsense-ros"]
-	path = 3rd/realsense-ros
-	url = https://github.com/realsenseai/realsense-ros.git
-	branch = ros1-legacy
-[submodule "3rd/yikun_msgs"]
-	path = 3rd/yikun_msgs
-	url = https://github.com/Zeuss-0/yikun_msgs.git
-[submodule "moma_service"]
-	path = moma_service
-	url = https://github.com/yangzhaofeng496/moma_service.git
-	branch = main
-[submodule "patrol"]
-	path = patrol
-	url = https://github.com/yangzhaofeng496/patrol.git
-	branch = master
-[submodule "ros_http_bridge"]
-	path = ros_http_bridge
-	url = https://github.com/yangzhaofeng496/ros_http_bridge.git
-	branch = main
-[submodule "teleop_joy_ctrl"]
-	path = teleop_joy_ctrl
-	url = https://github.com/yangzhaofeng496/teleop_joy_ctrl.git
-	branch = main
-[submodule "demonstrate"]
-	path = demonstrate
-	url = https://github.com/yangzhaofeng496/demonstrate.git
-	branch = main
-[submodule "detect"]
-	path = detect
-	url = https://github.com/yangzhaofeng496/detect.git
-	branch = main
 [submodule "moma_perception"]
 	path = moma_perception
 	url = https://github.com/Johnson3176/moma_perception.git
 [submodule "pointcloud_fusion"]
 	path = pointcloud_fusion
-	url = file:///D:/pointcloud_fusion.git
+	url = https://github.com/congjia-guo/pointcloud_fusion.git

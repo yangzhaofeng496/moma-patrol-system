@@ -183,3 +183,13 @@ doxygen_output/
 !.env.example
 *.local
 *.local.yaml
+
+# Modules provided locally outside this fusion branch
+/3rd/
+/demonstrate/
+/detect/
+/moma_nav/
+/moma_service/
+/patrol/
+/ros_http_bridge/
+/teleop_joy_ctrl/
