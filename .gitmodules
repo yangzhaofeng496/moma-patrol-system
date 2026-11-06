@@ -4,4 +4,4 @@
 	branch = test_pointcloud_fusion
 [submodule "pointcloud_fusion"]
 	path = pointcloud_fusion
-	url = https://github.com/congjia-guo/pointcloud_fusion.git
+	url = https://github.com/Moma-Patrol/pointcloud_fusion.git
